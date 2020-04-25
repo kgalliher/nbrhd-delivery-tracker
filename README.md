@@ -6,6 +6,8 @@ I started keeping track of every delivery truck I would see for no real reason o
 
 So, here's what I came up with:
 
+The sqlite database is now in a cloud accessible location.  I am now limited to using a desktop computer but the database is accessible anywhere.
+
 create-data.py
 - Using the sqlite3 module, this script opens or creates a new sqlite database and creates the table to store my observations.
 
@@ -22,3 +24,6 @@ AnalyzeDeliveries.ipynb
 - Get counts of companies
 - Plot delivery counts
 
+TODO:
+- New UI to add and view deliveries from a mobile device. Web?
+- Pre-process inout values.  Clean entered date values and strip special chars.  Restrict weird values.
