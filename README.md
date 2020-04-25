@@ -8,18 +8,18 @@ So, here's what I came up with:
 
 The sqlite database is in a cloud accessible location.  I am now limited to using a desktop computer but the database is accessible anywhere.
 
-create-data.py
+**create-data.py**
 - Using the sqlite3 module, this script opens or creates a new sqlite database and creates the table to store my observations.
 
-port-excel.py
+**port-excel.py**
 - Clean up column names in spreadsheet
 - Move data from original spreadsheet to the sqlite db.
 
-add-delivery.py
+**add-delivery.py**
 - CLI for adding a new delivery.
 - Use today's date or type a custom date
 
-AnalyzeDeliveries.ipynb
+**AnalyzeDeliveries.ipynb**
 - Query the deliveries database
 - Get counts of companies
 - Plot delivery counts
