@@ -26,10 +26,10 @@ The sqlite database is in a cloud accessible location.  I am now limited to usin
 
 Sample data:
 ```
-INSERT INTO deliveries (Date, Company, MyHouse) VALUES ("04/20/2020", "Amazon", "No");
+INSERT INTO deliveries (Date, Company, MyHouse) VALUES ("04/20/2020", "Amazon", "Yes");
 INSERT INTO deliveries (Date, Company, MyHouse) VALUES ("04/20/2020", "Fed Ex", "No");
 INSERT INTO deliveries (Date, Company, MyHouse) VALUES ("04/20/2020", "UPS", "No");
-INSERT INTO deliveries (Date, Company, MyHouse) VALUES ("04/20/2020", "Uber Eats", "No");
+INSERT INTO deliveries (Date, Company, MyHouse) VALUES ("04/20/2020", "Uber Eats", "Yes");
 ```
 TODO:
 - New UI to add and view deliveries from a mobile device. Web?
