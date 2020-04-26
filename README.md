@@ -24,6 +24,14 @@ The sqlite database is in a cloud accessible location.  I am now limited to usin
 - Get counts of companies
 - Plot delivery counts
 
+Sample data:
+```
+INSERT INTO deliveries (Date, Company, MyHouse) VALUES ("04/20/2020", "Amazon", "No");
+INSERT INTO deliveries (Date, Company, MyHouse) VALUES ("04/20/2020", "Fed Ex", "No");
+INSERT INTO deliveries (Date, Company, MyHouse) VALUES ("04/20/2020", "UPS", "No");
+INSERT INTO deliveries (Date, Company, MyHouse) VALUES ("04/20/2020", "Uber Eats", "No");
+```
 TODO:
 - New UI to add and view deliveries from a mobile device. Web?
 - Pre-process inout values.  Clean entered date values and strip special chars.  Restrict weird values.
+
