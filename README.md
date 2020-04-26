@@ -15,10 +15,19 @@ The sqlite database is in a cloud accessible location.  I am now limited to usin
 - Clean up column names in spreadsheet
 - Move data from original spreadsheet to the sqlite db.
 
-**add-delivery.py**
-- CLI for adding a new delivery.
+**manage-deliveries.py**
+- CLI for adding a new delivery and viewing the data.
 - Use today's date or type a custom date
 
+**manage-deliveries.bat**
+- Simple batch file to run the script with a variable flag:
+```
+View or Insert deliveries:
+Flags:
+        'add': Add a new delivery to the table
+        'view': View all existing deliveries
+        'count': Get a count of deliveries grouped by company
+```
 **AnalyzeDeliveries.ipynb**
 - Query the deliveries database
 - Get counts of companies
