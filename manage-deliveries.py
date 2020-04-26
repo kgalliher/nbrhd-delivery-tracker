@@ -53,6 +53,6 @@ elif sys.argv[1] == "add":
             print(df.groupby(["Company"]).count())
 
         else:
-            print("Exiting")
+            print("Discarded edit")
 else:
     print("What are you trying to do?  Use flag 'add', 'view' or 'count'")
