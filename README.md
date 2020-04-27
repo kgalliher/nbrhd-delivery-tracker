@@ -40,6 +40,16 @@ INSERT INTO deliveries (Date, Company, MyHouse) VALUES ("04/20/2020", "Fed Ex", 
 INSERT INTO deliveries (Date, Company, MyHouse) VALUES ("04/20/2020", "UPS", "No");
 INSERT INTO deliveries (Date, Company, MyHouse) VALUES ("04/20/2020", "Uber Eats", "Yes");
 ```
+
+If the following error occurs:
+```
+File "C:\ProgramData\Anaconda3\lib\sqlite3\dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ImportError: DLL load failed: The specified module could not be found.
+```
+Add the Conda env Lib/Path path to the %PATH% variable (assuming Windows).
+``` C:\ProgramData\Anaconda3\envs\python38\Library\bin ```
+
 TODO:
 - New UI to add and view deliveries from a mobile device. Web?
 - Pre-process inout values.  Clean entered date values and strip special chars.  Restrict weird values.
