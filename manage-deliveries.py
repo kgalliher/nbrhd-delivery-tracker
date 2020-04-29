@@ -4,7 +4,7 @@ import datetime
 import pandas as pd
 
 conn = sqlite3.connect(
-    r"C:\Users\kgall\OneDrive\Documents\covid-deliveries\deliveries.sqlite")
+    r"C:\Users\ken6574\OneDrive\Documents\covid-deliveries\deliveries.sqlite")
 
 
 def get_delivery_df(sql=""):
@@ -12,6 +12,10 @@ def get_delivery_df(sql=""):
         sql = "SELECT id as cnt, Company, MyHouse FROM deliveries"
     return pd.read_sql(sql, conn)
 
+def display_delivery_count():
+    df = get_delivery_df("SELECT id as count, Company FROM deliveries")
+    print(df.groupby("Company").count().sort_values(by="count", ascending=False))
+    print("Total: ", df.shape[0])
 
 if len(sys.argv) == 1:
     sys.exit()
@@ -23,9 +27,7 @@ if sys.argv[1] == "help":
     print("\t'count': Get a count of deliveries grouped by company")
     print("")
 if sys.argv[1] == "count":
-    df = get_delivery_df("SELECT id as count, Company FROM deliveries")
-    print(df.groupby("Company").count())
-    print("Total: ", df.shape[0])
+    display_delivery_count()
 elif sys.argv[1] == "view":
     df = get_delivery_df()
     print(df)
@@ -49,8 +51,7 @@ elif sys.argv[1] == "add":
                 _date, _company, my_house])
             conn.commit()
 
-            df = get_delivery_df()
-            print(df.groupby(["Company"]).count())
+            display_delivery_count()
 
         else:
             print("Discarded edit")
