@@ -27,6 +27,7 @@ Flags:
         'add': Add a new delivery to the table
         'view': View all existing deliveries
         'count': Get a count of deliveries grouped by company
+        'delete' ('row id'): Delete a row from the database 
 ```
 **AnalyzeDeliveries.ipynb**
 - Query the deliveries database
