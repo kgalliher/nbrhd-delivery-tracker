@@ -51,7 +51,6 @@ elif sys.argv[1] == "delete":
         curse = conn.cursor()
         curse.execute("DELETE FROM deliveries WHERE id = (?)", [id])
         conn.commit()
-
         display_delivery_count()
 elif sys.argv[1] == "add":
     while True:
