@@ -79,4 +79,4 @@ elif sys.argv[1] == "add":
         else:
             print("Discarded edit")
 else:
-    print("What are you trying to do?  Use flag 'add', 'view' or 'count'")
+    print("What are you trying to do?  Use flag 'add', 'delete + row id', 'view' or 'count'")
