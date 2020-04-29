@@ -33,7 +33,7 @@ def display_delivery_count():
 if len(sys.argv) == 1:
     sys.exit()
 if sys.argv[1] == "help":
-    print("View or Insert deliveries:")
+    print("View or Insert or Delete deliveries:")
     print("Flags:")
     print("\t'add': Add a new delivery to the table")
     print("\t'view': View all existing deliveries")
