@@ -47,7 +47,6 @@ elif sys.argv[1] == "view":
     df = get_delivery_df()
     print(df)
 elif sys.argv[1] == "delete":
-    print(sys.argv)
     if sys.argv[2] is not None:
         id = sys.argv[2]
         curse = conn.cursor()
