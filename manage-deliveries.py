@@ -39,7 +39,7 @@ if sys.argv[1] == "help":
     print("\t'view': View all existing deliveries")
     print("\t'count': Get a count of deliveries grouped by company")
     print(
-        "\t'delete' {'<row_id>')}: Delete a single delivery using its row ID")
+        "\t'delete' ('<row_id>'): Delete a single delivery using its row ID")
     print("")
 if sys.argv[1] == "count":
     display_delivery_count()
