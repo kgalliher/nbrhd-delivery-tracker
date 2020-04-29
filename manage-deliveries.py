@@ -41,7 +41,7 @@ if sys.argv[1] == "help":
     print(
         "\t'delete' ('<row_id>'): Delete a single delivery using its row ID")
     print("")
-if sys.argv[1] == "count":
+elif sys.argv[1] == "count":
     display_delivery_count()
 elif sys.argv[1] == "view":
     df = get_delivery_df()
